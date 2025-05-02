@@ -144,21 +144,7 @@ function Home() {
           )}
         </div>
       )}
-      {/* Admin Panel Button */}
-      <div style={{ 
-        position: 'fixed', 
-        bottom: '20px', 
-        right: '20px', 
-        padding: '15px', 
-        background: '#e74c3c', 
-        borderRadius: '5px',
-        boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
-        zIndex: 1000
-      }}>
-        <a href="/admin" style={{ color: 'white', fontWeight: 'bold', textDecoration: 'none' }}>
-          АДМИН ПАНЕЛ
-        </a>
-      </div>
+      {/* Премахнат админ панел */}
     </div>
   );
 }
