@@ -1,0 +1,276 @@
+.restaurant-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .restaurant-header {
+    margin-bottom: 30px;
+  }
+  
+  .restaurant-header-image {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .restaurant-header-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 30px;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .restaurant-header-overlay h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+  }
+  
+  .restaurant-description {
+    max-width: 700px;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  
+  .restaurant-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .restaurant-info-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .info-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .info-item span {
+    color: #555;
+  }
+  
+  .clickable {
+    cursor: pointer;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+  }
+  
+  .clickable:hover {
+    color: #c0392b;
+    text-decoration: underline;
+  }
+  
+  .restaurant-buttons {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #333;
+    color: white;
+  }
+  
+  .button.primary {
+    background-color: #e74c3c;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button.primary:hover {
+    background-color: #c0392b;
+  }
+  
+  .loading, .error {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin: 30px 0;
+  }
+  
+  .error {
+    color: #721c24;
+    background-color: #f8d7da;
+  }
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .social-icon:hover {
+    background-color: #e74c3c;
+  }
+  
+  .social-icons-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  .restaurant-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.restaurant-header {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.restaurant-header-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  padding: 30px;
+  color: white;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.restaurant-title {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+.restaurant-description {
+  max-width: 700px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 300px;
+  background: #252525;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-item span {
+  padding-left: 25px;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #ff4500;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+.button-group {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: #2e2e2e;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #3e3e3e;
+}
+
+.btn-primary {
+  background: #ff4500;
+}
+
+.btn-primary:hover {
+  background: #ff5722;
+}
+
+.loading, .error {
+  padding: 20px;
+  text-align: center;
+  background-color: #252525;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.error {
+  color: #ff4500;
+}
