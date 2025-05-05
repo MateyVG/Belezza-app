@@ -35,4 +35,6 @@ function ProtectedRoute({ children, adminRequired = false }) {
   return children;
 }
 
+
+
 export default ProtectedRoute;

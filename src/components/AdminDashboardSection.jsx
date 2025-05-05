@@ -126,3 +126,5 @@ function AdminDashboardSection({ restaurant, supabase }) {
 }
 
 export default AdminDashboardSection;
+
+

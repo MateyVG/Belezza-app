@@ -36,10 +36,7 @@ function Header() {
         
         <nav className={`main-nav ${mobileMenuOpen ? 'open' : ''}`}>
           <ul className="nav-list">
-            <li>
-              <Link to="/" className="nav-link">
-              </Link>
-            </li>
+            
             
             {user ? (
               <>

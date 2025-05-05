@@ -1,0 +1,9 @@
+{
+  "appId": "superadmin.belezza.bg",
+  "appName": "Belezza",
+  "webDir": "build",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
