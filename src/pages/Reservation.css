@@ -249,3 +249,40 @@
   margin: 20px 0;
   color: #aaaaaa;
 }
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+  
+  .step {
+    margin: 5px 0;
+  }
+  
+  .step-content {
+    padding: 15px;
+  }
+  
+  .restaurant-layout {
+    height: 300px;
+  }
+  
+  .form-buttons {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .step-content h2 {
+    font-size: 1.2rem;
+  }
+}

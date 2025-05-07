@@ -140,3 +140,36 @@ h1 {
 .restaurant-content:hover {
   background-color: #2e2e2e;
 }
+
+@media (max-width: 768px) {
+  .restaurants-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .restaurant-card {
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .restaurant-info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .restaurant-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -19,6 +19,7 @@ function AdminDashboard() {
   const [restaurants, setRestaurants] = useState([]);
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 768);
   const navigate = useNavigate();
   const { section: urlSection, restaurantId } = useParams();
 
@@ -93,6 +94,10 @@ function AdminDashboard() {
     fetchData();
   }, [user, userRole, isSuperAdmin, isRestaurantAdmin, navigate, restaurantId, supabase]);
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   const handleSignOut = async () => {
     await signOut();
     navigate('/login');
@@ -121,10 +126,14 @@ function AdminDashboard() {
 
   return (
     <div className="admin-container">
-      <div className="admin-sidebar">
-        <div className="admin-sidebar-header">
-          <h2>Админ панел</h2>
-          <p>{isSuperAdmin() ? 'Главен администратор' : 'Ресторантски администратор'}</p>
+      <div className={`admin-sidebar ${sidebarOpen ? 'open' : ''}`}>
+      <div className="admin-sidebar-header" onClick={toggleSidebar}>
+  <h2>Админ панел</h2>
+  <p>{isSuperAdmin() ? 'Главен администратор' : 'Ресторантски администратор'}</p>
+  
+  {/* Добавете икона за мобилен изглед */}
+  <i className={`fas ${sidebarOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`} 
+     style={{ display: window.innerWidth <= 768 ? 'block' : 'none' }}></i>
           
           {isSuperAdmin() && restaurants.length > 0 && (
             <div className="restaurant-selector">

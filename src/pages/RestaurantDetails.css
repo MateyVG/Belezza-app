@@ -274,3 +274,35 @@
 .error {
   color: #ff4500;
 }
+
+@media (max-width: 768px) {
+  .restaurant-header {
+    height: 300px;
+  }
+  
+  .restaurant-title {
+    font-size: 1.8rem;
+  }
+  
+  .content-row {
+    flex-direction: column;
+  }
+  
+  .info-card, .button-group {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurant-header-overlay {
+    padding: 15px;
+  }
+  
+  .restaurant-title {
+    font-size: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 10px;
+  }
+}

@@ -1237,3 +1237,111 @@
   background-color: #f8d7da;
   color: #58151c;
 }
+
+/* Responsive стилове за админ панела */
+@media (max-width: 768px) {
+  .admin-container {
+    flex-direction: column;
+  }
+  
+  .admin-sidebar {
+    width: 100%;
+    position: relative;
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .admin-sidebar.open {
+    max-height: 500px;
+  }
+  
+  .admin-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  .admin-sidebar-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .admin-sidebar-header p {
+    display: none;
+  }
+  
+  .restaurant-selector {
+    margin-top: 10px;
+  }
+  
+  .admin-menu li {
+    padding: 12px 15px;
+  }
+  
+  .admin-content {
+    padding: 15px;
+  }
+  
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .admin-table-container {
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .admin-table th, 
+  .admin-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .admin-action-btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-content {
+    padding: 10px;
+  }
+  
+  .admin-table th, 
+  .admin-table td {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+  
+  .admin-buttons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .table-preview {
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 0.8rem;
+  }
+  
+  .table-number {
+    font-size: 1rem;
+  }
+  
+  .table-capacity {
+    font-size: 0.7rem;
+  }
+}
